@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Saya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">ROSITA SAMSULLEIKA PUTRI</h1>
+      <ul class="nav-links">
+        <li><a href="#work">Proyek</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="hero">
+  <div class="star-field"></div>
+ <div class="star-ornament"></div>
+  <div class="hero-content">
+    <div class="hero-image">
+      
+      <div class="orbit-container">
+      <div class="orbit-border"></div>
+        <img src="images/foto.png" alt="Foto ACA" class="profile-pic" />
+        <div class="orbit orbit1"></div>
+        <div class="orbit orbit2"></div>
+        <div class="orbit orbit3"></div>
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <h2>Hai, Aku <span>Rosita </span></h2>
+      
+    </div>
+
+    <button id="cta">Lihat Proyekku</button>
+  </div>
+</section>
+
+  <!-- === Tentang Saya === -->
+<section id="about" class="about">
+  <h2>👩🏻‍💻 Tentang Saya</h2>
+  <p id="typing-text"></p>
+</section>
+
+
+
+<section id="education" class="education">
+  <h2>🎓 Pendidikan</h2>
+
+  <div class="edu-wrapper">
+    <!-- bola highlight -->
+    <div class="highlight-ball" id="highlight"></div>
+
+    <div class="edu-card left" onclick="moveHighlight('left')">
+      <h3>Universitas Esa Unggul</h3>
+      <p class="edu-year">2023 – Sekarang</p>
+      
+      <div class="divider"></div>
+      <p>
+        Mahasiswa aktif semester 5 Program Studi Sistem Informasi, fokus pada pengembangan sistem berbasis web,
+        manajemen proyek, dan analisis data. Penerima Beasiswa KIPK Kampus Merdeka tingkat nasional.
+      </p>
+    </div>
+
+    <div class="edu-card right" onclick="moveHighlight('right')">
+      <h3>SMKN 2 Kabupaten Tangerang</h3>
+      <p class="edu-year">Lulusan 2023</p>
+      <div class="divider"></div>
+      <p>
+        Jurusan Teknik Komputer dan Jaringan. Mempelajari dasar jaringan komputer, troubleshooting perangkat,
+        serta sistem operasi jaringan.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- === Pengalaman === -->
+<section id="experience" class="experience">
+  <h2>💼 Pengalaman</h2>
+  <div class="exp-container">
+    <div class="exp-box">
+      <h3>Administrative Support – PKM DIKTI</h3>
+      <p class="exp-year">Universitas Esa Unggul | 2024 – Sekarang</p>
+      <p>Membantu proses pendaftaran, verifikasi data, dan koordinasi dengan fakultas sesuai standar DIKTI.</p>
+    </div>
+
+    <div class="exp-box">
+      <h3>Project Administrator Intern</h3>
+      <p class="exp-year">PT Pasifik Cipta Nusantara | Mei – Juli 2023</p>
+      <p>Mengelola dokumen proyek BRI menggunakan Bitrix24, serta mengotomasi workflow laporan proyek.</p>
+    </div>
+
+    <div class="exp-box">
+      <h3>Sekretaris Organisasi – HIMA Sistem Informasi</h3>
+      <p class="exp-year">Universitas Esa Unggul | 2024 – Sekarang</p>
+      <p>Menyusun notulen, surat resmi, dan mengatur arsip administrasi organisasi secara terstruktur.</p>
+    </div>
+
+    <div class="exp-box">
+      <h3>Staff Humas – Organisasi Pecinta Alam</h3>
+      <p class="exp-year">2021 – 2022</p>
+      <p>Mengelola komunikasi kegiatan, publikasi di media sosial, dan menjadi penghubung panitia-peserta.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="work" class="work">
+  <h2>Proyek yang Pernah Dikerjakan</h2>
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="work-slider">
+    <img src="images/loginsiswa.png" class="slide active">
+    <img src="images/siswa.png" class="slide">
+    <img src="images/guru.png" class="slide">
+  </div>
+  <a href="https://www.figma.com/design/CHvd6SmGNWPiSVaijqR06o/SIM-SEKOLAH?node-id=17-7350&t=uopfpoiKUjh6apyp-1" class="figma-link" target="_blank">
+    <img src="images/figma.png" class="figma-logo" alt="Lihat Proyek Figma">
+</a>
+      <h3>Perancangan Sistem Informasi Manajemen Sekolah</h3>
+      <p>Mengembangkan tampilan web untuk mengelola data siswa, guru, nilai, absensi, dan materi. Sistem dirancang mudah digunakan dan mendukung pengelolaan data secara real time.</p>
+    
+    </div>
+
+    <div class="work-card">
+     <div class="work-slider">
+    <img src="images/beranda.png" class="slide active">
+    <img src="images/kue.png" class="slide">
+    <img src="images/pembayaran.png" class="slide">
+  </div>
+  <a href="https://www.figma.com/design/ixRXQHvIqjtPeuOhPmCrbF/projek-rpl?node-id=3-116&t=lD4mA87BCblRirOu-1" class="figma-link" target="_blank">
+    <img src="images/figma.png" class="figma-logo" alt="Lihat Proyek Figma">
+</a>
+      <h3> Perancangan Website Toko kue</h3>
+      <p>Membuat aplikasi CRUD untuk mengelola data kue, stok, harga, dan transaksi penjualan dengan tampilan sederhana dan proses pengelolaan data yang cepat.</p>
+      
+    </div>
+
+    <div class="work-card">
+<div class="work-slider">
+    <img src="images/BRI1.jpg" class="slide active">
+    <img src="images/MAGANG1.png" class="slide">
+    <img src="images/PACKING.jpg" class="slide">
+  </div>
+      <h3> Administrative Intern (document preparation & coordination with engineers) projek BRI .</h3>
+      <p>Mengelola dokumen proyek seperti Berita Acara, Delivery Order, dan UAT serta mendukung koordinasi antara tim teknis dan administratif.</p>
+    </div>
+
+    <div class="work-card">
+      <div class="work-slider">
+    <img src="images/dasboardbidan.png" class="slide active">
+    <img src="images/ibuyangmendaftar.png" class="slide">
+    <img src="images/isidata.png" class="slide">
+    
+  </div>
+   <a href="https://www.figma.com/design/NC8fE3zEtGAMsB6lYWpjJ3/APLIKASI-BIDAN?node-id=0-1&t=JUSMddpCSAR8CBCC-1" class="figma-link" target="_blank">
+    <img src="images/figma.png" class="figma-logo" alt="Lihat Proyek Figma">
+</a>
+      <h3> Perancangan UI/UX Design MomCare</h3>
+      <p>Merancang UI dan UX aplikasi MomCare mulai dari analisis kebutuhan hingga prototipe untuk mempermudah ibu hamil memantau kehamilan.</p>
+    
+    </div>
+    <div class="work-card">
+      <div class="work-slider">
+    <img src="images/OKSIGENM.png" class="slide active">
+    <img src="images/FROM.png" class="slide">
+    <img src="images/LOGPEMINJAMAN.png" class="slide">
+  </div>
+      <h3>Membuat Sistem Digital Penyewaan dan Pelacakan Tabung Oksigen Berbasis QR Code dan
+ Deposit Terintegrasi</h3>
+      <p>Mengembangkan sistem penyewaan dan pelacakan tabung oksigen berbasis QR Code dengan fitur peta untuk mencari lokasi tabung terdekat.</p>
+     
+    </div>
+    <div class="work-card">
+     <div class="work-slider">
+    <img src="images/ERP2.png" class="slide active">
+    <img src="images/ERP1.png" class="slide">
+    <img src="images/ERP3.png" class="slide">
+  </div>
+      <h3> Integrasi dan Kustomisasi ERP Next pada Modul Accounting & Finance</h3>
+      <p>Menganalisis modul Accounting & Finance, melakukan kustomisasi sesuai kebutuhan, serta membuat dokumentasi integrasi lintas modul ERPNext.</p>
+     
+    </div>
+   
+  </div>
+
+  <div class="work-footer">
+    <p>
+   <section id="skills" class="skills">
+  <h2>Saya memiliki kemampuan dalam beberapa <span class="highlight">tools dan framework</span></h2>
+ 
+  <div class="skills-icons">
+    <!-- Web -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
+    
+    <!-- Design -->
+    <img src="images/canva.png" alt="Canva" title="Canva" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" />
+
+    <!-- Office & Data -->
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732223.png" alt="Microsoft Word" title="Microsoft Word" />
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Microsoft Excel" title="Microsoft Excel" />
+
+    <!-- Database -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Workbench" title="MySQL Workbench" />
+
+    <!-- ERP -->
+    <img src="images/erp.png" alt="ERPNext" title="ERPNext" />
+  </div>
+</section>
+
+
+ 
+</section>
+
+
+
+
+ <section id="contact" class="contact">
+  <h2>Hubungi Saya</h2>
+  <p>Silakan hubungi saya melalui platform berikut:</p>
+
+  <div class="contact-buttons">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6285692539070" target="_blank" class="contact-btn whatsapp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      WhatsApp
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/rosita-samsulleika-putri-2b7522350" target="_blank" class="contact-btn linkedin">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+      LinkedIn
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:rositasamsulleikaputrii@gmail.com" class="contact-btn email">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
+      Email
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/rstasmsllkaptri" target="_blank" class="contact-btn instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+      Instagram
+    </a>
+  </div>
+</section>
+
+ <img src="images/loppy.png" class="corner-beaver" />
+
+  <script src="script.js"></script>
+</body>
+</html>
