@@ -786,3 +786,54 @@ footer {
   100% { transform: rotate(360deg); }
 }
 
+/* ============================= */
+/* 🔧 FIX RESPONSIVE UNTUK ORBIT */
+/* ============================= */
+
+/* Jangan ubah ukuran orbit, profile-pic, orbit-border */
+
+@media (max-width: 768px) {
+
+  /* Hero mengecil tapi orbit tetap full */
+  .hero {
+    padding-top: 110px;
+  }
+
+  /* Orbit container DISCALE tanpa mengacak posisi */
+  .orbit-container {
+    transform: scale(0.75);
+    transform-origin: center;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  #cta {
+    margin-top: 30px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding-top: 90px;
+  }
+
+  /* Orbit cukup kecil sedikit, tetap center */
+  .orbit-container {
+    transform: scale(0.6);
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  #cta {
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+}
