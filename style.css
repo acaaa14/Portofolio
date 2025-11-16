@@ -785,3 +785,188 @@ footer {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* ====================================== */
+/* 📱 RESPONSIVE DESIGN */
+/* ====================================== */
+
+/* --- TABLET (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .orbit-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-pic {
+    width: 230px;
+    height: 230px;
+  }
+
+  .orbit-border {
+    width: 235px;
+    height: 235px;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .work-card {
+    padding: 2rem 1rem;
+  }
+}
+
+
+/* --- HANDPHONE (max-width: 768px) --- */
+@media (max-width: 768px) {
+
+  .logo {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 80px;
+  }
+
+  .orbit-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .profile-pic {
+    width: 170px;
+    height: 170px;
+  }
+
+  .orbit-border {
+    width: 175px;
+    height: 175px;
+    border-width: 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.7rem;
+  }
+
+  #cta {
+    margin-top: 30px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .education,
+  .experience,
+  .about {
+    padding: 60px 6%;
+  }
+
+  .edu-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .highlight-ball {
+    display: none; /* hilangkan karena posisi pecah di HP */
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card {
+    width: 100%;
+  }
+
+  .work-slider img {
+    width: 130px;
+  }
+
+  .figma-link {
+    top: 5px;
+    left: 5px;
+  }
+}
+
+
+/* --- SMALL PHONE (max-width: 480px) --- */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding-top: 60px;
+  }
+
+  .orbit-container {
+    width: 130px;
+    height: 130px;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  .orbit-border {
+    width: 145px;
+    height: 145px;
+    border-width: 8px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .work-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .work-slider img {
+    width: 110px;
+  }
+
+  .skills-icons img {
+    width: 40px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .corner-beaver {
+    width: 100px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
