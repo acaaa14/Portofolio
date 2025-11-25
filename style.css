@@ -777,7 +777,7 @@ footer {
   50% { transform: rotate(2deg); }
 }
 
-/* Muter Pelan */
+/* Muter lambat */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
