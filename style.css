@@ -809,3 +809,119 @@ footer {
 .footer-links a:hover {
   color: #ffffff;
 }
+
+/* =============================
+   📱 RESPONSIVE FIX FOR MOBILE
+   ============================= */
+
+@media (max-width: 600px) {
+
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+
+  /* Hero section */
+  .orbit-container {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .profile-pic {
+    width: 190px !important;
+    height: 190px !important;
+    top: 50% !important;
+    left: 50% !important;
+  }
+
+  .orbit-border {
+    width: 200px !important;
+    height: 200px !important;
+    border-width: 8px !important;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem !important;
+  }
+
+  #cta {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+
+  /* Education – stack vertically */
+  .edu-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-ball {
+    display: none; /* bola highlight menyebabkan overflow */
+  }
+
+
+  /* Work Grid – 1 kolom saja */
+  .work-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .work-card {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .work-slider img {
+    width: 130px !important;
+    height: auto !important;
+  }
+
+  /* Figma logo reposition */
+  .figma-link {
+    top: 5px;
+    left: 5px;
+  }
+
+  .figma-logo {
+    width: 28px !important;
+  }
+
+  .figma-link:hover::after {
+    font-size: 10px;
+    bottom: -25px;
+  }
+
+
+  /* Skills */
+  .skills-icons img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  /* Contact buttons */
+  .contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+
+  .corner-beaver {
+    width: 90px !important;
+    bottom: 10px;
+    right: 10px;
+  }
+}
