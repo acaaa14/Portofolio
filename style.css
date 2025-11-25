@@ -6,10 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-color: #1037d2; /* biru navy gelap */
-  color: #e5e7eb; /* abu terang agar kontras */
-}
+
 
 /* === Navbar === */
 header {
@@ -786,3 +783,29 @@ footer {
   100% { transform: rotate(360deg); }
 }
 
+
+
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #9bb0ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
